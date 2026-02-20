@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>FRN | Contact</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">FRN</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="container" style="max-width: 600px;">
+        <h2 style="margin-bottom: 2rem;">INQUIRIES</h2>
+        <form>
+            <input type="text" placeholder="FULL NAME">
+            <input type="email" placeholder="EMAIL ADDRESS">
+            <textarea rows="5" placeholder="MESSAGE"></textarea>
+            <button class="btn" type="submit">SEND REQUEST</button>
+        </form>
+    </section>
+</body>
+</html>
