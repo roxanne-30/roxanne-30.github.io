@@ -1,28 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Soundboard | Axe & Ember</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>FRN | Items</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">FRN</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="items.html">Items</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <main class="container">
-        <h2 style="margin-bottom: 2rem;">NEW COLLECTION</h2>
-        <div class="grid">
-            <div class="card"><div class="card-img"></div><h3>AURORA SILVER</h3><p>$999.99</p></div>
-            <div class="card"><div class="card-img"></div><h3>ORBIT SHELL</h3><p>$1,299.99</p></div>
-            <div class="card"><div class="card-img"></div><h3>STEALTH BLACK</h3><p>$1,119.99</p></div>
-            <div class="card"><div class="card-img"></div><h3>POLAR GLOSS</h3><p>$899.99</p></div>
+    <header>
+        <div class="top-bar">
+            <span>Fret and Plucks Nationwide</span>
+            <div class="cart">🛒 $0.00</div>
         </div>
+        
+        <nav class="nav-pill">
+            <div class="logo-container">
+                <img src="logo.png" alt="A&E Logo" class="site-logo">
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Find your sound...">
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-container">
+        <aside class="sidebar">
+            <h3>Refine Search</h3>
+            
+            <div class="filter-group">
+                <h4>Category</h4>
+                <div class="category-links">
+                    <a href="#electric" class="cat-btn">Electric Guitars</a>
+                    <a href="#acoustic" class="cat-btn">Acoustic Guitars</a>
+                    <a href="#bass" class="cat-btn">Bass Guitars</a>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Top Brands</h4>
+                <label class="check-container">Fender
+                    <input type="checkbox"> <span class="checkmark"></span>
+                </label>
+                <label class="check-container">Gibson
+                    <input type="checkbox"> <span class="checkmark"></span>
+                </label>
+                <label class="check-container">Ibanez
+                    <input type="checkbox"> <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Sort By</h4>
+                <select class="sort-dropdown">
+                    <option>Featured Items</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div>
+        </aside>
+
+        <section class="product-listing">
+            
+            <div id="electric" class="product-section">
+                <h2 class="section-title">Electric Guitars</h2>
+                <div class="product-list-vertical">
+                    
+                    <div class="product-row">
+                        <div class="product-image-container">
+                            <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?w=600" alt="Electric" class="fixed-size-img">
+                        </div>
+                        <div class="product-details-side">
+                            <div class="title-group">
+                                <h3>Midnight Stratocaster</h3>
+                                <span class="stock-tag in-stock">In Stock</span>
+                            </div>
+                            <p class="guitar-description">Professional grade electric guitar with an alder body, maple neck, and vintage-style single-coil pickups for that classic chime.</p>
+                            <div class="price-action-group">
+                                <div class="product-price">$1,450.00</div>
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-row">
+                        <div class="product-image-container">
+                            <img src="https://images.unsplash.com/photo-1550985616-10810253b84d?w=600" alt="Electric" class="fixed-size-img">
+                        </div>
+                        <div class="product-details-side">
+                            <div class="title-group">
+                                <h3>Iron Label RG</h3>
+                                <span class="stock-tag in-stock">In Stock</span>
+                            </div>
+                            <p class="guitar-description">Built for metal. Features a nitro wizard neck and DiMarzio Fusion Edge pickups for high-output, aggressive tones.</p>
+                            <div class="price-action-group">
+                                <div class="product-price">$1,199.00</div>
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-row">
+                        <div class="product-image-container">
+                            <img src="https://images.unsplash.com/photo-1550291652-6ea9114a47b1?w=600" alt="Electric" class="fixed-size-img">
+                        </div>
+                        <div class="product-details-side">
+                            <div class="title-group">
+                                <h3>Heritage Goldtop</h3>
+                                <span class="stock-tag limited">Limited Edition</span>
+                            </div>
+                            <p class="guitar-description">A timeless classic with a solid mahogany body and maple top. Delivers that thick, creamy sustain known in rock history.</p>
+                            <div class="price-action-group">
+                                <div class="product-price">$2,499.00</div>
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <div id="acoustic" class="product-section">
+                <h2 class="section-title">Acoustic Guitars</h2>
+                <div class="product-list-vertical">
+                    
+                    <div class="product-row">
+                        <div class="product-image-container">
+                            <img src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?w=600" alt="Acoustic" class="fixed-size-img">
+                        </div>
+                        <div class="product-details-side">
+                            <div class="title-group">
+                                <h3>Vintage Sunburst</h3>
+                                <span class="stock-tag limited">Limited</span>
+                            </div>
+                            <p class="guitar-description">Solid mahogany back and sides with a sitka spruce top. Delivers a warm, resonant tone perfect for folk and country.</p>
+                            <div class="price-action-group">
+                                <div class="product-price">$1,299.00</div>
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-row">
+                        <div class="product-image-container">
+                            <img src="https://images.unsplash.com/photo-1511181405900-5896a7d7967b?w=600" alt="Acoustic Koa" class="fixed-size-img">
+                        </div>
+                        <div class="product-details-side">
+                            <div class="title-group">
+                                <h3>Koa Traveler</h3>
+                                <span class="stock-tag in-stock">In Stock</span>
+                            </div>
+                            <p class="guitar-description">Small body, big sound. Crafted with rare Koa wood for a bright, focused tone that gets better with age.</p>
+                            <div class="price-action-group">
+                                <div class="product-price">$899.00</div>
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-row">
+                        <div class="product-image-container">
+                            <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?w=600" alt="Acoustic Dreadnought" class="fixed-size-img">
+                        </div>
+                        <div class="product-details-side">
+                            <div class="title-group">
+                                <h3>Dreadnought Elite</h3>
+                                <span class="stock-tag in-stock">In Stock</span>
+                            </div>
+                            <p class="guitar-description">Full-sized body for maximum projection. Ideal for bluegrass and large ensemble performances.</p>
+                            <div class="price-action-group">
+                                <div class="product-price">$1,550.00</div>
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <div id="bass" class="product-section">
+                <h2 class="section-title">Bass Guitars</h2>
+                <div class="product-list-vertical">
+                    
+                    <div class="product-row">
+                        <div class="product-image-container">
+                            <img src="https://images.unsplash.com/photo-1583000292271-d5015930dd24?w=600" alt="Bass" class="fixed-size-img">
+                        </div>
+                        <div class="product-details-side">
+                            <div class="title-group">
+                                <h3>Precision Bass Gold</h3>
+                                <span class="stock-tag in-stock">In Stock</span>
+                            </div>
+                            <p class="guitar-description">Deep, punchy tone that sits perfectly in the mix. Features a high-mass bridge and rosewood fingerboard.</p>
+                            <div class="price-action-group">
+                                <div class="product-price">$1,150.00</div>
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-row">
+                        <div class="product-image-container">
+                            <img src="https://images.unsplash.com/photo-15936934007ef8-838634e56598?w=600" alt="Jazz Bass" class="fixed-size-img">
+                        </div>
+                        <div class="product-details-side">
+                            <div class="title-group">
+                                <h3>Mercury Jazz Bass</h3>
+                                <span class="stock-tag in-stock">In Stock</span>
+                            </div>
+                            <p class="guitar-description">Slim-neck profile and versatile pickups make this perfect for slap, funk, and jazz fusion styles.</p>
+                            <div class="price-action-group">
+                                <div class="product-price">$1,350.00</div>
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-row">
+                        <div class="product-image-container">
+                            <img src="https://images.unsplash.com/photo-1614948152342-999335807963?w=600" alt="5-String Bass" class="fixed-size-img">
+                        </div>
+                        <div class="product-details-side">
+                            <div class="title-group">
+                                <h3>Thunder Bass V</h3>
+                                <span class="stock-tag limited">Only 2 Left</span>
+                            </div>
+                            <p class="guitar-description">Extended low-end range for modern metal. Active electronics for precise tone shaping.</p>
+                            <div class="price-action-group">
+                                <div class="product-price">$1,890.00</div>
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 Axe & Ember Premium Guitars. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
