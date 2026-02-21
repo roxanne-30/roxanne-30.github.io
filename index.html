@@ -3,79 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUXE MOTORS | Elite Automotive Maison</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Fret and Plucks | Premium Guitars</title>
+    <link rel="stylesheet" href="miral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-    <header>
-        <div class="navbar">
-            <a href="index.html" class="logo">LUXE MOTORS</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Collection</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="btn-nav-luxury">Book Consultation</a></li>
-                </ul>
-            </nav>
+    <header class="navbar">
+        <div class="logo-section">
+            <img src="logo.png" alt="Lofty Solutions" class="logo">
+            <div class="brand-container">
+                <span class="brand-name">Fret and Plucks</span>
+                <span class="brand-tagline">Premium Instruments</span>
+            </div>
         </div>
-    </header>
 
-    <section class="hero">
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="C:\Users\HP\Downloads\bg.mp4" type="video\mp4">
-            Your browser does not support the video tag.
-        </video>
-        
-        <div class="hero-overlay"></div>
-        
-        <div class="hero-content">
-            <p class="hero-subtitle">Beyond Performance</p>
-            <h1>The Gold Standard <br> of Performance</h1>
-            <a href="#inventory" class="btn-primary">Explore Inventory</a>
-        </div>
-    </section>
+        <nav class="nav-links">
+            <a href="index333.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-    <section class="section-dark" id="inventory">
-        <div class="container">
-            <h2 class="archive-title">The Curated Archive</h2>
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button class="search-btn"><i data-lucide="search"></i></button>
+            </div>
             
-            <div class="grid-3-cols">
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="C:\Users\Admin\Downloads\9111.png" alt="911 Carrera S">
-                    </div>
-                    <div class="card-info">
-                        <h3>911 Carrera S</h3>
-                        <p>Pure engineering perfection in every curve.</p>
-                        <a href="#" class="view-detail">View Detail</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="C:\Users\Admin\Downloads\maybach.png" alt="S-Class Maybach">
-                    </div>
-                    <div class="card-info">
-                        <h3>S-Class Maybach</h3>
-                        <p>The pinnacle of luxury automotive travel.</p>
-                        <a href="#" class="view-detail">View Detail</a>
+            <div class="auth-buttons">
+                <div class="dropdown-wrapper">
+                    <a href="#" class="btn-login">Log In</a>
+                    <div class="dropdown-content">
+                        <p>Welcome back</p>
+                        <a href="#" class="google-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Logo.svg" alt="Google">
+                            Google
+                        </a>
+                        <a href="#" class="email-link">Email Login</a>
                     </div>
                 </div>
 
-                <div class="card placeholder-card">
-                    <div class="card-info">
-                        <h3>Coming Soon</h3>
-                        <p>Discover the next masterpiece.</p>
+                <div class="dropdown-wrapper">
+                    <a href="#" class="btn-signup">Sign Up</a>
+                    <div class="dropdown-content">
+                        <p>Join the community</p>
+                        <a href="#" class="google-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Logo.svg" alt="Google">
+                            Google
+                        </a>
+                        <a href="#" class="email-link">Create Account</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
+    <main class="hero-section">
+        <div class="hero-content">
+            <h3 class="hero-subtitle">ESTABLISHED 2026</h3>
+            <h1>CRAFTING <br><span>PERFECTION</span></h1>
+            <p>Experience the warmth of hand-picked premium acoustic guitars.</p>
+            <div class="hero-btns">
+                <a href="products.html" class="btn btn-primary">Shop Collection</a>
+                <a href="about.html" class="btn btn-secondary">Our Story</a>
+            </div>
+        </div>
+        
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1550291652-6ea9114a47b1?q=80&w=1000" alt="Guitar" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+    </main>
+
+    <script>lucide.createIcons();</script>
 </body>
-</html>
+</html>	
