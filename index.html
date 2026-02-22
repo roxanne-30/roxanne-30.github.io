@@ -3,89 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fret and Plucks | Elite Guitar Maison</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@200;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Fret and Plucks | Premium Guitars</title>
+    <link rel="stylesheet" href="miral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="nav-pill">
-                <div class="logo-container">
-                    <a href="index.html" class="logo">FRET & PLUCKS</a>
+    <header class="navbar">
+        <div class="logo-section">
+            <img src="logo.png" alt="Lofty Solutions" class="logo">
+            <div class="brand-container">
+                <span class="brand-name">Fret and Plucks</span>
+                <span class="brand-tagline">Premium Instruments</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index333.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button class="search-btn"><i data-lucide="search"></i></button>
+            </div>
+            
+            <div class="auth-buttons">
+                <div class="dropdown-wrapper">
+                    <a href="#" class="btn-login">Log In</a>
+                    <div class="dropdown-content">
+                        <p>Welcome back</p>
+                        <a href="#" class="google-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Logo.svg" alt="Google">
+                            Google
+                        </a>
+                        <a href="#" class="email-link">Email Login</a>
+                    </div>
                 </div>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="items.html">Guitars</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">Aboutt</a></li>
-                </ul>
-                <div class="search-bar">
-                    <input type="text" placeholder="Find your sound...">
+
+                <div class="dropdown-wrapper">
+                    <a href="#" class="btn-signup">Sign Up</a>
+                    <div class="dropdown-content">
+                        <p>Join the community</p>
+                        <a href="#" class="google-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Logo.svg" alt="Google">
+                            Google
+                        </a>
+                        <a href="#" class="email-link">Create Account</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="hero">
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="videos/background.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        
-        <div class="hero-overlay"></div>
-        
+    <main class="hero-section">
         <div class="hero-content">
-            <p class="hero-subtitle">Fret and Plucks Performance</p>
-            <h1> Your STudio Tone <br> of GUitar</h1>
+            <h3 class="hero-subtitle">ESTABLISHED 2026</h3>
+            <h1>CRAFTING <br><span>PERFECTION</span></h1>
+            <p>Experience the warmth of hand-picked premium acoustic guitars.</p>
+            <div class="hero-btns">
+                <a href="products.html" class="btn btn-primary">Shop Collection</a>
+                <a href="about.html" class="btn btn-secondary">Our Story</a>
+            </div>
+        </div>
         
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1550291652-6ea9114a47b1?q=80&w=1000" alt="Guitar" class="hero-img">
+            <div class="hero-overlay"></div>
         </div>
-    </section>
+    </main>
 
-    <section class="section-dark" id="inventory">
-        <div class="container">
-            <h2 class="section-title">The Curated Archive</h2>
-            
-            <div class="product-list-vertical">
-                <div class="product-row">
-                    <div class="product-image-container">
-                        <img src="images/9111.png" alt="Midnight Strat" class="fixed-size-img">
-                    </div>
-                    <div class="product-details-side">
-                        <span class="stock-status">In Stock</span>
-                        <br>
-                        <h3>Midnight Stratocaster</h3>
-                        <p>Professional grade electric guitar with an alder body and vintage-style pickups.</p>
-                        <div class="product-price">$1,450.00</div>
-                        <button class="buy-btn">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container footer-grid">
-            <div>
-                <h2 class="logo" style="font-size: 1.2rem;">FRET & PLUCKS</h2>
-                <p style="color: var(--gray); font-size: 0.9rem; margin-top: 10px;">Premium instruments for the modern musician.</p>
-            </div>
-            <div>
-                <h5>Social Media</h5>
-                <div class="social-icons">
-                    <a href="#">FB</a>
-                    <a href="#">IG</a>
-                    <a href="#">YT</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2026 FRET AND PLUCKS NATIONWIDE
-        </div>
-    </footer>
-
+    <script>lucide.createIcons();</script>
 </body>
-</html>
+</html>	
