@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry | Fret and Plucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-section">
+            <div class="brand-container">
+                <span class="brand-name">Fret & Plucks</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="header-right">
+            <div class="auth-buttons">
+                <a href="#" class="btn-login">Log In</a>
+                <a href="#" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-info">
+            <span class="eyebrow">GET IN TOUCH</span>
+            <h1 class="small-h1">Private <span>Inquiry</span></h1>
+            <p class="contact-lead">For custom commissions, showroom appointments, or technical support for your instrument.</p>
+            
+            <div class="contact-details">
+                <div class="detail-item">
+                    <i data-lucide="map-pin"></i>
+                    <div>
+                        <h4>Atelier Location</h4>
+                        <p>123 Artisan Way, Lipa City, Batangas</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i data-lucide="phone"></i>
+                    <div>
+                        <h4>Private Line</h4>
+                        <p>+63 912 345 6789</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i data-lucide="mail"></i>
+                    <div>
+                        <h4>Email Concierge</h4>
+                        <p>concierge@fretandplucks.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-box">
+            <form>
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="e.g. Julian Segovia">
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="julian@email.com">
+                </div>
+                <div class="input-group">
+                    <label>Subject of Inquiry</label>
+                    <select>
+                        <option>Custom Guitar Commission</option>
+                        <option>Showroom Viewing</option>
+                        <option>Instrument Maintenance</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Tell us about your dream instrument..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Fret and Plucks. Crafted for the Virtuoso.</p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
