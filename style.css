@@ -111,3 +111,4 @@ footer {
 }
 .social-icons { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
 .social-icons a { color: var(--gold); text-decoration: none; font-size: 1.2rem; }
+}
