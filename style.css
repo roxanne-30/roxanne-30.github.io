@@ -130,6 +130,3 @@ input, textarea, select {
 }
 
 input:focus { border-color: var(--gold) !important; }
-
-}
-
